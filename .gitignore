@@ -1,0 +1,105 @@
+############################
+# .NET / C# / Visual Studio
+############################
+
+## Build output
+bin/
+obj/
+out/
+[Bb]uild/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+## Publish output
+publish/
+*.pubxml
+*.pubxml.user
+*.pubxml.orig
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.vs/
+.vscode/
+
+## Visual Studio cache
+*.tlog
+*.log
+*.vspscc
+*_i.c
+*_p.c
+*.cache
+*.pidb
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+
+## Rider
+.idea/
+*.sln.iml
+
+################################
+#   SECURITY / SECRETS
+################################
+
+# Hide ALL appsettings variants
+appsettings.json
+appsettings.*.json
+**/appsettings.json
+**/appsettings.*.json
+
+# Environment variables, secrets
+*.env
+*.env.*
+.env.local
+secrets.json
+secret*.json
+
+# Certificates, keys
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+
+##########################
+#   Logs & Temp Files
+##########################
+*.log
+logs/
+Log/
+LogFiles/
+temp/
+tmp/
+*.tmp
+*.bak
+*.old
+
+#############################
+#   OS-level ignores
+#############################
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
