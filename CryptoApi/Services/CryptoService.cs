@@ -21,12 +21,6 @@ public class CryptoService
         _rsaPrivate = RSA.Create();
         _rsaPublic = RSA.Create();
 
-        // Public & Private key formatını sen belirleyeceksin:
-        // - Eğer Base64-encoded PKCS#1/PKCS#8 PEM içeriğini tutuyorsan 
-        //   uygun Import metotlarını kullanman gerekir.
-        //
-        // Basitlik için burada .NET'in raw key formatını kullandığımızı varsayıyorum.
-
         // Private key import
         var privateKeyBytes = Convert.FromBase64String(opt.RsaPrivateKeyBase64);
         _rsaPrivate.ImportPkcs8PrivateKey(privateKeyBytes, out _);
